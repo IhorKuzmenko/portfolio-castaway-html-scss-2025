@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1440">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header__container">
+            <a href="#" class="header__link">
+                <svg class="header__icon">
+                    <use href="./images/icons.svg#icon-logo" width="160" height="33"></use>
+                </svg>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="#">Home</a></li>
+                    <li><a class="nav__link" href="#">Episodes</a></li>
+                    <li><a class="nav__link" href="#">About</a></li>
+                    <li><a class="nav__link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__image_container">
+                    <img class="hero__image" src="./images/hero_image.jpg"
+                        alt="A man in a studio wearing headphones and speaking into a microphone.">
+                    <svg class="hero__icon" width="68" height="74">
+                        <use href="./images/icons.svg#icon-hero_icon" width="68" height="74"></use>
+                    </svg>
+                </div>
+                <div class="hero__content_container">
+                    <h1 class="hero__title">Take your<br> podcast to the<br> <span
+                            class="hero__title hero__title--underline">next</span> <span
+                            class="hero__title hero__title--weight">level</span></h1>
+                    <p class="hero__description">Listen on</p>
+                    <ul class="social_media__list">
+                        <li><a class="social_media__link icon_spotify" href="#"></a></li>
+                        <li><a class="social_media__link icon_pocket_casts" href="#"></a></li>
+                        <li><a class="social_media__link icon_soundcloud" href="#"></a></li>
+                        <li><a class="social_media__link icon_apple_podcast" href="#"></a></li>
+                        <li><a class="social_media__link icon_overcast" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="episodes">
+            <div class="container episodes__container">
+                <div class="episodes__container--positioning">
+                    <h2 class="episodes__title">Latest episodes</h2>
+                    <button class="episodes__button" type="button">View all episodes</button>
+                </div>
+                <ul class="episodes__list">
+                    <li class="episodes__item">
+                        <div class="episodes_container__item">
+                            <img class="episodes__image" src="/images/episode_1.jpg" alt="Mixing console">
+                        </div>
+                        <div class="episodes_container__content">
+                            <a class="episodes_container__link" href="#">Gear</a>
+                            <p class="episodes_container__name">Episode <span
+                                    class="episodes_container__name--size">3</span></p>
+                            <h3 class="episodes_container__title">Should you get<br> outboard audio gear?</h3>
+                            <p class="episodes_container__description">Is hardware really worth it when it comes to
+                                podcasting? The answer is...it<br> depends.
+                                Here’s
+                                our reasons on why you might want to consider picking<br> something up.</p>
+                            <button class="episodes_container__button" type="button">View Episode Details</button>
+                        </div>
+                    </li>
+                    <li class="episodes__item">
+                        <div class="episodes__container_item">
+                            <img class="episodes__image" src="/images/episode_2.jpg" alt="Microphone">
+                        </div>
+                        <div class="episodes__container_content">
+                            <a class="episodes_container__link episodes_container__link--width" href="#">Tips &
+                                Tricks</a>
+                            <p class="episodes_container__name">Episode <span
+                                    class="episodes_container__name--size">2</span></p>
+                            <h3 class="episodes_container__title">Mic tricks to take <br>you to the next level</h3>
+                            <p class="episodes_container__description">Stop rolling with those default settings on your
+                                mic. These small tweaks will<br> take you
+                                from
+                                sounding good to great.</p>
+                            <button class="episodes_container__button" type="button">View Episode Details</button>
+                        </div>
+                    </li>
+                    <li class="episodes__item">
+                        <div class="episodes__container_item">
+                            <img class="episodes__image" src="/images/episode_3.jpg" alt="Man with microphone">
+                        </div>
+                        <div class="episodes__container_content">
+                            <a class="episodes_container__link" href="#">Gear</a>
+                            <p class="episodes_container__name">Episode <span
+                                    class="episodes_container__name--size">1</span></p>
+                            <h3 class="episodes_container__title">The best microphone<br> under $200</h3>
+                            <p class="episodes_container__description">With so many microphones on the market, how are
+                                you supposed to know<br> what’s the best?
+                                Take a
+                                look at our top picks.</p>
+                            <button class="episodes_container__button" type="button">View Episode Details</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="biography">
+            <div class="container biography__container">
+                <div class="biography_container_content">
+                    <button class="biography__button" type="button">
+                    </button>
+                    <p class="biography__text">Meet your host</p>
+                    <h2 class="biography__title">Jacob Paulaner</h2>
+                    <p class="biography__description biography__description--position">Jacob has a background in audio
+                        engineering, and has<br> been
+                        podcasting since the early days.</p>
+                    <p class="biography__description">He’s here to help you level up your game by sharing<br> everything
+                        he’s learned along the way.</p>
+                </div>
+                <div class="biography__container_image">
+                    <img class="biography__image" src="./images/jacob_paulaner.jpg"
+                        alt="A man in a studio wearing headphones and speaking into a microphone.">
+                </div>
+            </div>
+        </section>
+        <section class="subscription">
+            <div class="container subscription__container">
+                <div>
+                    <p class="subscription__description">Email Newsletter</p>
+                    <h2 class="subscription__title">Subscribe<br> for updates</h2>
+                </div>
+                <div class="subscription__container_form">
+                    <form class="subscription__form">
+                        <input class="subscription__input" type="text" name="name" placeholder="Name">
+                        <input class="subscription__input" type="text" name="email" placeholder="Email">
+                        <button class="subscription__button" type="submit">Submit</button>
+                    </form>
+                </div>
+                <svg class="subscription__icon" width="147" height="91">
+                    <use href="./images/icons.svg#icon-subscription_icon" width="147" height="91"></use>
+                </svg>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container reviews__container">
+                <ul class="reviews__list">
+                    <li class="reviews__link">
+                        <ul class="stars__list">
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <p class="reviews__text">I can’t recommend<br> this podcast<br> enough</p>
+                        <p class="reviews__name">Betty Lacey</p>
+                    </li>
+                    <li class="reviews__link">
+                        <ul class="stars__list">
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <p class="reviews__text">Jacob is the best<br> in the business</p>
+                        <p class="reviews__name">Adam Driver</p>
+                    </li>
+                    <li class="reviews__link">
+                        <ul class="stars__list">
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <p class="reviews__text">A wealth of audio knowledge</p>
+                        <p class="reviews__name">Marcus Brown</p>
+                    </li>
+                    <li class="reviews__link">
+                        <ul class="stars__list">
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <p class="reviews__text">Every episode is a gem!</p>
+                        <p class="reviews__name">Jessica Knowl</p>
+                    </li>
+                    <li class="reviews__link">
+                        <ul class="stars__list">
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <p class="reviews__text">Whoa whoa, let me take some notes!</p>
+                        <p class="reviews__name">Scott Adams</p>
+                    </li>
+                    <li class="reviews__link">
+                        <ul class="stars__list">
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="18" height="17">
+                                    <use href="./images/icons.svg#icon-star" width="18" height="17"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <p class="reviews__text">I’ve upped my game considerably since I started listening</p>
+                        <p class="reviews__name">Steven Blast</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div>
+                <a class="footer__link" href="#">
+                    <svg width="224" height="46">
+                        <use href="./images/icons.svg#icon-logo" width="224" height="46"></use>
+                    </svg>
+                </a>
+                <ul class="footer_media__list">
+                    <li>
+                        <a href="#">
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram" width="24" height="24"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter" width="24" height="24"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook" width="24" height="24"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__container_nav">
+                <ul class="footer__navigation_list">
+                    <li><a class="footer__navigation_link" href="#">Home</a></li>
+                    <li><a class="footer__navigation_link" href="#">Episodes</a></li>
+                    <li><a class="footer__navigation_link" href="#">About</a></li>
+                    <li><a class="footer__navigation_link" href="#">Contact</a></li>
+                </ul>
+                <ul class="footer__navigation_list">
+                    <li><a class="footer__navigation_link footer__navigation_link--size" href="#">Style Guide</a></li>
+                    <li><a class="footer__navigation_link footer__navigation_link--size" href="#">Instructions</a></li>
+                    <li><a class="footer__navigation_link footer__navigation_link--size" href="#">Changelog</a></li>
+                    <li><a class="footer__navigation_link footer__navigation_link--size" href="#">Credit</a></li>
+                    <li><a class="footer__navigation_link footer__navigation_link--size" href="#">Powered by Webflow</a></li>
+                    <li><a class="footer__navigation_link footer__navigation_link--size" href="#">Licenses</a></li>
+                </ul>
+                <ul class="social_media__list social_media__list--intend">
+                    <li><a class="social_media__link icon_spotify" href="#"></a></li>
+                    <li><a class="social_media__link icon_pocket_casts" href="#"></a></li>
+                    <li><a class="social_media__link icon_soundcloud" href="#"></a></li>
+                    <li><a class="social_media__link icon_apple_podcast" href="#"></a></li>
+                    <li><a class="social_media__link icon_overcast" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
