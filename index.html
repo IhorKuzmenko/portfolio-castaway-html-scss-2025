@@ -199,41 +199,63 @@
           </div>
         </div>
       </section>
+
       <section class="subscription">
-        <div class="container subscription__container">
-          <div>
-            <p class="subscription__description">Email Newsletter</p>
-            <h2 class="subscription__title">
-              Subscribe<br />
-              for updates
-            </h2>
-          </div>
-          <div class="subscription__container_form">
-            <form class="subscription__form">
-              <input
-                class="subscription__input"
-                type="text"
-                name="name"
-                placeholder="Name"
-              />
-              <input
-                class="subscription__input"
-                type="text"
-                name="email"
-                placeholder="Email"
-              />
-              <button class="subscription__button" type="submit">Submit</button>
-            </form>
-          </div>
-          <svg class="subscription__icon" width="147" height="91">
-            <use
-              href="./images/icons.svg#icon-subscription_icon"
+        <div class="container">
+          <div class="subscription__container">
+            <div>
+              <p class="subscription__description">Email Newsletter</p>
+
+              <h2 class="subscription__title">
+                Subscribe<br />
+                for updates
+              </h2>
+            </div>
+
+            <div class="subscription__container_form">
+              <form class="subscription__form">
+                <input
+                  class="subscription__input"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  aria-label="Your name"
+                  autocomplete="name"
+                  required
+                />
+
+                <input
+                  class="subscription__input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  aria-label="Your email"
+                  autocomplete="email"
+                  required
+                />
+
+                <button class="subscription__button" type="submit">
+                  Submit
+                </button>
+              </form>
+            </div>
+
+            <svg
+              class="subscription__icon"
               width="147"
               height="91"
-            ></use>
-          </svg>
+              aria-hidden="true"
+            >
+              <use
+                href="./images/icons.svg#icon-subscription_icon"
+                width="147"
+                height="91"
+              ></use>
+            </svg>
+          </div>
         </div>
       </section>
+
       <section class="reviews">
         <div class="container reviews__container">
           <ul class="reviews__list">
