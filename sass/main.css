@@ -320,130 +320,275 @@ a {
   }
 }
 .episodes__container {
-  padding-top: 93px;
-  padding-bottom: 160px;
+  padding-top: 60px;
+  padding-bottom: 80px;
 }
 .episodes__container--positioning {
-  margin-bottom: 40px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
 }
 
 .episodes__title {
   font-family: inherit;
-  font-weight: inherit;
-  font-size: 64px;
-  line-height: 1.23;
-  letter-spacing: 2.88px;
+  font-weight: 400;
+  font-size: clamp(32px, 9vw, 42px);
+  line-height: 1.2;
+  letter-spacing: 1px;
 }
 
 .episodes__button {
-  margin-left: auto;
-  cursor: pointer;
-  width: 178px;
-  height: 51px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 51px;
+  padding: 12px 20px;
   background-color: #118DA8;
-  border-color: transparent;
+  border: none;
   border-radius: 6px;
   color: inherit;
   font-family: inherit;
-  font-weight: inherit;
-  font-size: 17px;
-  line-height: 1.58;
-  letter-spacing: 0%;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+.episodes__button:hover, .episodes__button:focus {
+  background-color: rgb(13.2508108108, 109.9037837838, 130.9491891892);
 }
 
 .episodes__list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 32px;
 }
 
 .episodes__item {
   display: flex;
-  padding: 40px;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+  padding: 20px;
   background-color: #000000;
-  border-radius: 32px;
+  border-radius: 20px;
 }
-.episodes__item:not(:last-child) {
-  margin-bottom: 60px;
+
+.episodes_container__item,
+.episodes__container_item {
+  width: 100%;
+  min-width: 0;
+}
+
+.episodes_container__content,
+.episodes__container_content {
+  flex: 1;
+  min-width: 0;
 }
 
 .episodes__image {
-  margin-right: 53px;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .episodes_container__link {
   display: inline-block;
-  text-align: center;
-  margin-top: 7.68px;
-  padding: 0 16px;
-  width: 73px;
-  border-radius: 6px;
+  margin-top: 0;
+  padding: 4px 16px;
   background-color: #191919;
+  border-radius: 6px;
   color: inherit;
   font-family: inherit;
-  font-weight: inherit;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0%;
+  text-align: center;
 }
 
 .episodes_container__link--width {
-  width: 136px;
-  font-size: 17px;
-  line-height: 1.58;
+  font-size: 16px;
 }
 
 .episodes_container__name {
-  margin-top: 48px;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: 17px;
-  line-height: 1.58;
-  letter-spacing: 0%;
+  margin-top: 24px;
   color: #118DA8;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
 }
 .episodes_container__name--size {
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: inherit;
 }
 
 .episodes_container__title {
-  margin-top: 17.56px;
+  margin-top: 16px;
   font-family: inherit;
-  font-weight: inherit;
-  font-size: 64px;
-  line-height: 1.1;
-  letter-spacing: 2.56px;
+  font-weight: 400;
+  font-size: clamp(28px, 8vw, 40px);
+  line-height: 1.15;
+  letter-spacing: 1px;
+  overflow-wrap: break-word;
 }
 
 .episodes_container__description {
-  margin-top: 28px;
+  margin-top: 20px;
   font-family: inherit;
-  font-weight: inherit;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0%;
   opacity: 0.7;
 }
 
 .episodes_container__button {
-  cursor: pointer;
-  margin-top: 18px;
-  width: 208px;
-  height: 51px;
-  border-radius: 6px;
-  border-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  min-height: 51px;
+  margin-top: 24px;
+  padding: 12px 20px;
   background-color: #118DA8;
+  border: none;
+  border-radius: 6px;
   color: inherit;
   font-family: inherit;
-  font-weight: inherit;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0%;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+.episodes_container__button:hover, .episodes_container__button:focus {
+  background-color: rgb(13.2508108108, 109.9037837838, 130.9491891892);
 }
 
+@media screen and (min-width: 375px) {
+  .episodes__item {
+    padding: 24px;
+  }
+  .episodes_container__title {
+    font-size: clamp(32px, 8vw, 42px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .episodes__container {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+  .episodes__container--positioning {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  .episodes__title {
+    font-size: 52px;
+    letter-spacing: 2px;
+  }
+  .episodes__button {
+    flex-shrink: 0;
+    font-size: 17px;
+  }
+  .episodes__list {
+    gap: 40px;
+  }
+  .episodes__item {
+    padding: 32px;
+    border-radius: 32px;
+  }
+  .episodes__image {
+    max-height: 400px;
+  }
+  .episodes_container__name {
+    margin-top: 32px;
+    font-size: 17px;
+  }
+  .episodes_container__title {
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+  .episodes_container__description {
+    font-size: 20px;
+  }
+  .episodes_container__button {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .episodes__item {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+  .episodes_container__item,
+  .episodes__container_item {
+    flex: 0 0 35%;
+    width: auto;
+  }
+  .episodes__image {
+    max-height: none;
+  }
+  .episodes_container__title {
+    font-size: clamp(40px, 4.5vw, 56px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .episodes__container {
+    padding-top: 93px;
+    padding-bottom: 160px;
+  }
+  .episodes__title {
+    font-size: 64px;
+    line-height: 1.23;
+    letter-spacing: 2.88px;
+  }
+  .episodes__button {
+    width: 178px;
+    min-height: 51px;
+    padding: 0;
+  }
+  .episodes__list {
+    gap: 60px;
+  }
+  .episodes__item {
+    gap: 53px;
+    padding: 40px;
+  }
+  .episodes_container__item,
+  .episodes__container_item {
+    flex: 0 0 389px;
+  }
+  .episodes__image {
+    width: 100%;
+  }
+  .episodes_container__link {
+    margin-top: 7.68px;
+    font-size: 18px;
+  }
+  .episodes_container__link--width {
+    font-size: 17px;
+  }
+  .episodes_container__name {
+    margin-top: 48px;
+  }
+  .episodes_container__title {
+    margin-top: 17.56px;
+    font-size: 64px;
+    line-height: 1.1;
+    letter-spacing: 2.56px;
+  }
+  .episodes_container__description {
+    margin-top: 28px;
+    font-size: 22px;
+  }
+  .episodes_container__button {
+    margin-top: 18px;
+    min-width: 208px;
+  }
+}
 .biography {
   padding-top: 100px;
   padding-bottom: 100px;
