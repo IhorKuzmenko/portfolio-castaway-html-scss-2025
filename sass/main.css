@@ -590,77 +590,203 @@ a {
   }
 }
 .biography {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .biography__container {
   display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.biography_container_content {
+  width: 100%;
+  min-width: 0;
 }
 
 .biography__button {
-  cursor: pointer;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 148px;
-  width: 112px;
-  height: 112px;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  border: none;
   border-radius: 50%;
-  border-color: transparent;
   background-color: #118DA8;
+  cursor: pointer;
+  transition: background-color 250ms ease, transform 250ms ease;
 }
 .biography__button::after {
   content: "";
   position: absolute;
-  width: 71px;
-  height: 71px;
+  width: 40px;
+  height: 40px;
   background-image: url(../images/arrow.svg);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+.biography__button:hover, .biography__button:focus {
+  background-color: rgb(13.2508108108, 109.9037837838, 130.9491891892);
+  transform: translateY(-3px);
 }
 
 .biography__text {
   margin-top: 20px;
   font-family: inherit;
-  font-weight: inherit;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0%;
-  color: var(--green-blue-color);
+  color: #118DA8;
 }
 
 .biography__title {
+  margin-top: 8px;
   font-family: inherit;
-  font-weight: inherit;
-  font-size: 65px;
-  line-height: 1.22;
-  letter-spacing: 2.88px;
+  font-weight: 400;
+  font-size: clamp(36px, 10vw, 48px);
+  line-height: 1.2;
+  letter-spacing: 1px;
+  overflow-wrap: break-word;
 }
 
 .biography__description {
   font-family: inherit;
-  font-weight: inherit;
-  font-size: 22px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0%;
   opacity: 0.7;
 }
 .biography__description--position {
-  margin-top: 28px;
-  margin-bottom: 33px;
+  margin-top: 24px;
+  margin-bottom: 20px;
 }
 
 .biography__container_image {
-  margin-left: auto;
+  width: 100%;
+  min-width: 0;
 }
 
 .biography__image {
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: 13px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
+@media screen and (min-width: 375px) {
+  .biography__container {
+    gap: 48px;
+  }
+  .biography__title {
+    font-size: clamp(40px, 10vw, 52px);
+  }
+  .biography__description {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .biography {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .biography__container {
+    gap: 60px;
+  }
+  .biography__button {
+    width: 88px;
+    height: 88px;
+  }
+  .biography__button::after {
+    width: 55px;
+    height: 55px;
+  }
+  .biography__text {
+    font-size: 18px;
+  }
+  .biography__title {
+    font-size: 60px;
+    letter-spacing: 2px;
+  }
+  .biography__description {
+    font-size: 20px;
+  }
+  .biography__description--position {
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+  .biography__container_image {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .biography__container {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+  .biography_container_content {
+    flex: 1;
+  }
+  .biography__container_image {
+    flex: 0 0 45%;
+    max-width: none;
+    margin: 0;
+  }
+  .biography__title {
+    font-size: clamp(48px, 5vw, 65px);
+  }
+  .biography__description {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .biography {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .biography__container {
+    gap: 60px;
+  }
+  .biography_container_content {
+    flex: 1;
+  }
+  .biography__button {
+    width: 112px;
+    height: 112px;
+    margin-top: 148px;
+  }
+  .biography__button::after {
+    width: 71px;
+    height: 71px;
+  }
+  .biography__text {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .biography__title {
+    margin-top: 0;
+    font-size: 65px;
+    line-height: 1.22;
+    letter-spacing: 2.88px;
+  }
+  .biography__description {
+    font-size: 22px;
+  }
+  .biography__description--position {
+    margin-top: 28px;
+    margin-bottom: 33px;
+  }
+  .biography__container_image {
+    flex: 0 0 50%;
+  }
+}
 .subscription {
   padding-top: 100px;
   padding-bottom: 100px;
